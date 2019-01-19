@@ -27,11 +27,15 @@ function reset () {
         cards[i].classList.remove("invisible");
     }    
     correct = getRandomInt(options);
-    correctHeader.textContent = cards[correct].style.backgroundColor;
+    correctHeader.forEach((header) => {
+        header.textContent = cards[correct].style.backgroundColor;
+    });
     tryAgain.textContent = "Try Again";
     tryAgain.classList.add("invisible");
-    newColors.textContent = "NEW COLORS"
-    header.style.backgroundColor = "rgb(73, 117, 188)";
+    newColors.textContent = "NEW COLORS";
+    header.forEach((header) => {
+        header.style.backgroundColor = "rgb(73, 117, 188)";    
+    });        
 }
 
 
