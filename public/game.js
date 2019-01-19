@@ -1,5 +1,5 @@
 var cards = document.querySelectorAll(".square");
-var correctHeader = document.querySelector("#rgb");
+var correctHeader = document.querySelectorall(".rgb");
 var tryAgain = document.querySelector("#tryAgain");
 var newColors = document.querySelector("#newColors");
 var header = document.querySelector(".header");
