@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/game.css">
+
+    <title>Color Game</title>
+  </head>
+<body>
+    <div class="container-fluid px-0 mb-0">
+        <div class="jumbotron jumbotron-fluid text-center header text-white py-1 mb-0" id="header">
+            <h2 class="display-4">THE GREAT</h1>
+            <h2 class="display-2" id="rgb">RGB(<span id="red">0</span>, <span id="green">0</span>, <span id="blue">0</span>)</h2>
+            <h2 class="display-4">GUESSING GAME</h2>
+        </div>
+    </div>
+
+    <div class="btn-toolbar bg-white" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="container d-flex justify-content-around" id="nav">
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn rounded-0" id="newColors">NEW COLORS</button>              
+            </div>
+            <div class="btn-group" role="group" aria-label="Second group">
+              <button type="button" class="btn invisible" id="tryAgain">Try Again</button>        
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn rounded-0" id="easy">EASY</button>
+              <button type="button" class="btn rounded-0 selected text-white" id="hard">HARD</button>
+            </div>
+          </div>            
+        </div>
+
+    <div id="container">
+        <div>
+            <div class="square"></div>  
+            <div class="square"></div>  
+            <div class="square"></div>
+        </div>
+        <div id="row2"> 
+            <div class="square"></div>  
+            <div class="square"></div>  
+            <div class="square"></div>  
+        </div>
+    </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/game.js"></script>
+  </body>
+</html>
