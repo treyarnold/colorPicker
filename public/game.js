@@ -1,8 +1,8 @@
 var cards = document.querySelectorAll(".square");
-var correctHeader = document.querySelectorall(".rgb");
+var correctHeader = document.querySelectorAll(".rgb");
 var tryAgain = document.querySelector("#tryAgain");
 var newColors = document.querySelector("#newColors");
-var header = document.querySelectorall(".header");
+var header = document.querySelectorAll(".header");
 var easy = document.querySelector("#easy");
 var hard = document.querySelector("#hard");
 var options = 6;
@@ -52,7 +52,9 @@ function squareListener(){
                 for (i = 0; i < cards.length; i++){                    
                     cards[i].style.backgroundColor = cards[correct].style.backgroundColor;
                 }
-                header.style.backgroundColor = cards[correct].style.backgroundColor;
+                header.forEach((header) =>{
+                    header.style.backgroundColor = cards[correct].style.backgroundColor;
+                });
             }
         })
     }
