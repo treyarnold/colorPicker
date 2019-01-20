@@ -1,6 +1,5 @@
-const   express = require("express"),
-        app     = express(),
-        port    = 3000;
+var express = require("express");
+var app = express();
 
 app.use(express.static("public"));
 
@@ -8,4 +7,6 @@ app.get("/", function(req, res){
     res.render("home.ejs")
 });
 
-app.listen(port, () => console.log(`Colot picker app listening on port ${port}!`));
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("server has started");
+});
