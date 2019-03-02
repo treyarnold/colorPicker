@@ -27,7 +27,16 @@ button {
 #container {
     margin: 0 auto;
     max-width: 60%;
+}
 
+#container-sm {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+#container-lg {
+    margin: 0 auto;
+    max-width: 45%;
 }
 
 .square{
